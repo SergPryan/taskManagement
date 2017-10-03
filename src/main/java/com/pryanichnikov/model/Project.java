@@ -1,6 +1,5 @@
 package com.pryanichnikov.model;
 
-import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.*;
@@ -11,12 +10,12 @@ public class Project {
 	@GeneratedValue
 	private Long id;
 
-	@OneToMany
-	private Set<Task> listTask  = new HashSet<>();
+	@OneToMany(mappedBy = "project")
+	private Set<Task> listTask;
 
 	@OneToOne
 	private Client client;
-	
+
 	private String name;
 
 	public Client getClient() {

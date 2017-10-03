@@ -21,17 +21,6 @@ public class Employee {
 	private Date dismissal;
 	private int salary;
 
-	@ManyToMany
-	private Set<Task> tasks = new HashSet<>();
-
-	public Set<Task> getTasks() {
-		return tasks;
-	}
-
-	public void setTasks(Set<Task> tasks) {
-		this.tasks = tasks;
-	}
-
 	public Long getId() {
 		return id;
 	}
