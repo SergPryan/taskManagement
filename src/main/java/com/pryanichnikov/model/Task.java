@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Entity(name="task")
 public class Task {
+
 	@Id
 	@GeneratedValue
 	private Long id;

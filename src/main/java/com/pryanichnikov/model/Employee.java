@@ -9,6 +9,7 @@ import javax.persistence.*;
 
 @Entity(name="employee")
 public class Employee {
+
 	@Id
 	@GeneratedValue
 	private Long id;
